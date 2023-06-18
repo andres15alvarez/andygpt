@@ -13,3 +13,7 @@ PROXY = os.getenv('PROXY', None)
 N_CHOICES = int(os.getenv('N_CHOICES', 1))
 
 TEMPERATURE = float(os.getenv('TEMPERATURE', 1.0))
+
+TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
+
+ENABLE_QUOTING = os.getenv('ENABLE_QUOTING', 'true').lower() == 'true'
