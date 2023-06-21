@@ -57,7 +57,7 @@ async def error_handler(_: object, context: ContextTypes.DEFAULT_TYPE) -> None:
     logging.error(f'Exception while handling an update: {context.error}')
 
 
-def get_reply_to_message_id(enable_quoting: bool, update: Update) -> int | None:
+def get_reply_to_message_id(enable_quoting: bool, update: Update) -> int:
     """Returns the message id of the message to reply to.
 
     Args:
