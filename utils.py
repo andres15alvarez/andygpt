@@ -71,3 +71,6 @@ def get_reply_to_message_id(enable_quoting: bool, update: Update) -> int:
     if enable_quoting:
         return update.message.message_id
     return None
+
+def say_hi():
+    print('hi')
